@@ -1,4 +1,4 @@
-package com.company;
+package com.company.animals;
 
 public class Rabbit extends Animal {
     private double earLength;
@@ -6,7 +6,8 @@ public class Rabbit extends Animal {
     private String favoriteFood;
 
 
-    public Rabbit(double earLength, String furColor, String favoriteFood) {
+    public Rabbit(String name, String location, char gender, double weight, double earLength, String furColor, String favoriteFood) {
+        super(name, location, gender, weight);
         this.earLength = earLength;
         this.furColor = furColor;
         this.favoriteFood = favoriteFood;

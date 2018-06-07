@@ -1,12 +1,13 @@
-package com.company;
+package com.company.animals;
 
-public class Penguin {
+public class Penguin extends Animal {
 
     private String Type;
     private double wingSpan;
     private String featherType;
 
-    public Penguin(String type, double wingSpan, String featherType) {
+    public Penguin(String name, String location, char gender, double weight, String type, double wingSpan, String featherType) {
+        super(name, location, gender, weight);
         Type = type;
         this.wingSpan = wingSpan;
         this.featherType = featherType;

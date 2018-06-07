@@ -1,11 +1,12 @@
-package com.company;
+package com.company.animals;
 
-public class Lion {
+public class Lion extends Animal {
     private double noseSize;
     private double ManeLength; // i feel like im developing some game like loe
     private boolean isTrained;
 
-    public Lion(double noseSize, double maneLength, boolean isTrained) {
+    public Lion(String name, String location, char gender, double weight, double noseSize, double maneLength, boolean isTrained) {
+        super(name, location, gender, weight);
         this.noseSize = noseSize;
         ManeLength = maneLength;
         this.isTrained = isTrained;

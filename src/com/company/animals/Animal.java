@@ -1,5 +1,5 @@
-package com.company;
-
+package com.company.animals;
+// whyyyy???  (forgot extends Animal)
 public class Animal {
     private String name;
     private String location;
@@ -8,6 +8,13 @@ public class Animal {
 
     public String getName() {
         return name;
+    }
+
+    public Animal(String name, String location, char gender, double weight) {
+        this.name = name;
+        this.location = location;
+        this.gender = gender;
+        this.weight = weight;
     }
 
     public void setName(String name) {
