@@ -28,7 +28,8 @@ public class Menu {
                     peoplemenu.ManagePeople();
                     break;
                 case 3:
-                    manageInventory();
+                    InventoryMenu inventoryMenu = new InventoryMenu();
+                    inventoryMenu.ManageInventory();
                     break;
                 case 4:
                     System.out.println("Exiting program");
@@ -47,9 +48,6 @@ public class Menu {
         }
     }
 
-    private void manageInventory() {
-
-    }
 
     private void manageAnimals() {
 
