@@ -1,11 +1,10 @@
 package com.company;
 
 
-import java.util.Scanner;
+import com.company.menu.Menu;
 
 public class Main {
 
-    private Scanner input = new Scanner(System.in);
 
 
     public static void main(String[] args) {
@@ -21,12 +20,11 @@ public class Main {
          */
         // happy birth day to you, you live in a zoo, when i create it you will be in it; happy birth day to you
 
-
+        System.out.println("input welcome message here");
         Menu mainmenu = new Menu();
         mainmenu.mainMenu();
 
         // user input
-
 
 
 
