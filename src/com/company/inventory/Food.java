@@ -14,7 +14,8 @@ public class Food extends Item {
         this.refrigerated = refrigerated;
     }
 
-    
+
+
     public String getExpirationDate() {
         return expirationDate;
     }
