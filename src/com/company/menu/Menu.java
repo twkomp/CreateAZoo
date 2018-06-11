@@ -25,7 +25,7 @@ public class Menu {
                     break;
                 case 2:
                     PeopleMenu peoplemenu = new PeopleMenu();
-                    peoplemenu.ManagePeople();
+                    peoplemenu.managePeople();
                     break;
                 case 3:
                     InventoryMenu inventoryMenu = new InventoryMenu();

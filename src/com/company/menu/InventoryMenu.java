@@ -19,7 +19,7 @@ public class InventoryMenu {
                 case 2:
                     //Handle Visitor
                     break;
-                //Handle incorrect input
+
                 case 3:
                     Menu mainMenu = new Menu();
                     mainMenu.mainMenu();
@@ -31,6 +31,7 @@ public class InventoryMenu {
                     break;
             }
         } catch (InputMismatchException ime) {
+            //Handle incorrect input
             input.nextLine();
             System.out.println("please chose a valid option");
             ManageInventory();
