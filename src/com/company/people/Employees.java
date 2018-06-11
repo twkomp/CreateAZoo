@@ -1,13 +1,16 @@
 package com.company.people;
 
-public class Employees extends People {
+import java.util.ArrayList;
+import java.util.List;
 
+public class Employees extends People {
+    private List<Employees> employeesList = new ArrayList<Employees>();
     private int employeeNumber;
     private String jobTitle;
     private String hireDate;
     private int hours;
 
-    public Employees(int age, int name, char gender, String race, int employeeNumber, String jobTitle, String hireDate, int hours) {
+    public Employees(int age, String name, char gender, String race, int employeeNumber, String jobTitle, String hireDate, int hours) {
         super(age, name, gender, race);
         this.employeeNumber = employeeNumber;
         this.jobTitle = jobTitle;
@@ -46,5 +49,9 @@ public class Employees extends People {
 
     public void setHours(int hours) {
         this.hours = hours;
+    }
+    public void addEmployee (Employees newEmployee) {
+        employeesList.add(newEmployee);
+        System.out.println(newEmployee.getName() + " is being mind controlled");
     }
 }

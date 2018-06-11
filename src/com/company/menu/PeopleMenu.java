@@ -1,13 +1,15 @@
 package com.company.menu;
 
+import com.company.people.Employees;
+
 import java.util.InputMismatchException;
+import java.util.List;
 import java.util.Scanner;
 
 public class PeopleMenu {
 
     private Scanner input = new Scanner(System.in);
-
-    //Handles People Options
+    //Handles People Options1
     protected void managePeople() {
         try {
             //Find out what type of person we need to manage.
@@ -110,7 +112,7 @@ public class PeopleMenu {
             switch (input.nextInt()) {
                 case 1:
                     //Create new Visitor
-                    createPerson();
+                    //createPerson();
                     break;
                 case 2:
                     //View All Visitor
@@ -157,8 +159,12 @@ public class PeopleMenu {
         input.nextLine();
         System.out.println("What is the employee's job Title????");
         String employeeTitle = input.nextLine();
-        System.out.println("What is the employee's hire data?????");
-        
+        System.out.println("What is the employee's hire date?????");
+        String employeeHireDate = input.nextLine();
+
+        Employees newEmployee = new Employees(employeeAge,employeeName,employeeGender,employeeRace,employeeNumber,employeeTitle,employeeHireDate,0);
+        newEmployee.addEmployee(newEmployee);
+
 
     }
 

@@ -3,11 +3,11 @@ package com.company.people;
 public class People {
 
     private int age;
-    private int name;
+    private String name;
     private char gender;
     private String race;
 
-    public People(int age, int name, char gender, String race) {
+    public People(int age, String name, char gender, String race) {
         this.age = age;
         this.name = name;
         this.gender = gender;
@@ -22,11 +22,11 @@ public class People {
         this.age = age;
     }
 
-    public int getName() {
+    public String getName() {
         return name;
     }
 
-    public void setName(int name) {
+    public void setName(String name) {
         this.name = name;
     }
 
